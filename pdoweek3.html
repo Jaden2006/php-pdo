@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Toevoegen</title>
+</head>
+<body>
+    <h2>Product Toevoegen</h2>
+    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <label for="product_naam">Product Naam:</label>
+        <input type="text" name="product_naam" required><br>
+
+        <label for="prijs_per_stuk">Prijs per stuk:</label>
+        <input type="number" name="prijs_per_stuk" step="0.01" required><br>
+
+        <label for="omschrijving">Omschrijving:</label>
+        <textarea name="omschrijving" required></textarea><br>
+
+        <input type="submit" value="Product Toevoegen">
+    </form>
+</body>
+</html>
